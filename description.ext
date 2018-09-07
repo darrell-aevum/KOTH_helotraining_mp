@@ -1,0 +1,109 @@
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+disabledAI=1;
+debriefing=1;
+showGPS=1;
+Respawn = 3;
+RespawnDelay = 8;
+RespawnDialog = 0;
+respawnOnStart = 0;
+respawnButton = 1;
+enabledebugconsole = 1;
+loadScreen = "main.jpg";
+author = Eero 'rambo' af Heurlin;
+onLoadName = Helicopter Training MP;
+
+
+//Parameters
+class Params
+{
+	class DayTime
+	{
+	//paramsArray[0]
+			title = "Time Of Day";
+			values[] = {5,12,7,0,1};
+			texts[] = {"Dawn","Midday","Dusk", "Midnight", "Random"};
+			default = 12;
+	};
+	
+	class LZSize
+	{
+	//paramsArray[1]
+		title = "LZ Size (land within X meters of center)";
+		values[] = {15, 25, 50, 100, 150, 200,300};
+		texts[] = {"15m", "25m", "50m", "100m", "150m", "200m","300m"};
+		default = 100;
+	};
+	  
+	class SmokeSetting
+	{
+	//paramsArray[2]
+		title = "Smoke/Chemlights";
+		values[] = {0,1};
+		texts[] = {"Off", "On"};
+		default = 1;
+	};
+
+	class HotLZProbability
+	{
+	//paramsArray[3]
+		title = "Hot LZ Chance";
+		values[] = {0,20,50,80,100};
+		texts[] = {"Never", "Low", "Medium", "High", "Always"};
+		default = 50;
+	};
+	
+	class AAProbability
+	{
+	//paramsArray[4]
+		title = "Anti Air Population";
+		values[] = {0,10,20,50,100};
+		texts[] = {"None", "Low", "Medium", "High", "Kill Me"};
+		default = 10;
+	};
+
+	class LZMinDistace
+	{
+	//paramsArray[5]
+		title = "LZ min distance from other active missions";
+		values[] = {1000,1500,2000,5000,10000};
+		texts[] = {"1 km", "1.5 km", "2 km", "5 km", "10 km"};
+		default = 1000;
+	};
+
+	class SquadsLinger
+	{
+	//paramsArray[6]
+		title = "How long squads linger on map after task completetion";
+		values[] = {0, 60, 90, 120, 300, 600};
+		texts[] = {"Not at all", "1 min", "1.5 min", "2 min", "5 min", "10 min"};
+		default = 60;
+	};
+
+	class AutoSpawnTasks
+	{
+    //paramsArray[7]
+		title = "Automatically create tasks for all players";
+		values[] = {0,1};
+		texts[] = {"Off", "On"};
+		default = 1;
+	};
+	
+	class ParaDropSize
+	{
+	//paramsArray[8]
+		title = "LZ Size (fly within X meters of center)";
+		values[] = {200, 250, 300, 350, 400};
+		texts[] = {"200m", "250m", "300m", "350m", "400m"};
+		default = 300;
+	};
+
+	class EnemyCount
+	{
+	//paramsArray[9]
+		title = "Number of enemy in the zone.";
+		values[] = {0, 10, 20, 30, 40, 50, 60};
+		texts[] = {"0", "10", "20", "30", "40", "50", "60"};
+		default = 30;
+	};
+};
